@@ -47,7 +47,11 @@ h2.top_title span{font-size:12px; color:#666;font-weight:500}
 </section>
 
 <div id="footer">
-    <p><%=@setting.foot || "华丽的踢脚线"%></p>
+    <%if @setting.footer_url.to_s.length==0%>
+        <p><%=@setting.foot || "华丽的踢脚线"%></p>
+    <%else%>
+        <p><%=link_to (@setting.foot || "华丽的踢脚线"),@setting.footer_url %></p>
+    <%end%>
 </div>
 
 <script>

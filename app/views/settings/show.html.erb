@@ -10,6 +10,9 @@
   <dd><%= @setting.foot %></dd>
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @setting.title %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:footer_url) %>:</strong></dt>
+  <dd><%= @setting.footer_url %></dd>
+  
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

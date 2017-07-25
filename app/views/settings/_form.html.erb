@@ -36,6 +36,14 @@
     </div>
     <%=f.error_span(:title) %>
   </div>
+  
+  <div class="form-group">
+    <%= f.label :footer_url, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :footer_url, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:footer_url) %>
+  </div>
 
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
